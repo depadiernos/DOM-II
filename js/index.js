@@ -2,9 +2,9 @@
 
 // load event listener for logo
 nav = document.querySelector(".main-navigation");
-nav.style.cssText = "transform: translate(0, -100px);";
+nav.style.cssText = "transform: translate(0, -100px);z-index: 99999;";
 const grayOut = () => {
-  nav.style.cssText = "transform:translate(0, 0);transition: all 2s ease-out;";
+  nav.style.cssText = "transform:translate(0, 0);transition: all 2s ease-out;z-index: 99999";
 };
 window.addEventListener("load", grayOut);
 
@@ -41,7 +41,7 @@ nav.querySelector(".nav-link").addEventListener('click', (event)=>{event.prevent
 headerImg = document.querySelector(".intro img");
 window.addEventListener("scroll", () => {
   headerImg.style.cssText =
-    "transform: translate(1000px, 0);transition: all 0.5s ease-out;";
+    "transform: translate(10000px, 0);transition: all 1s ease-out;";
   setTimeout(() => {
     headerImg.style.cssText = "transition: all 2s ease-out;";
   }, 1000);
