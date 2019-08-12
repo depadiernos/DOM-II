@@ -1,3 +1,9 @@
+let intro =document.createElement('div')
+intro.innerText = "Click on a Rocket to blast it to the top. Click and hold on the Rocket and the astronaut goes for a spacewalk!"
+let br = document.createElement('br')
+
+document.body.appendChild(intro)
+
 let blocks = document.querySelectorAll(".block");
 
 // Make the default rocket order explicit
